@@ -4,9 +4,9 @@ kubectl logs pod/mysql-deployment-549c8ff445-6tqjb -n mysql
 
 kubectl get secrets -n mysql
 
-# MySQL Kubernetes Deployment
+MySQL Kubernetes Deployment
 
-## Encode Password (Base64)
+Encode Password (Base64)
 ```bash
 echo -n "Admin123" | base64
 
