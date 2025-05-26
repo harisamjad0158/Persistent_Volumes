@@ -11,7 +11,7 @@ spec:
     matchLabels:
       app: mysql
   strategy:
-    type: Recreate  # Recommended for MySQL
+    type: Recreate
   template:
     metadata:
       labels:
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: mysql:latest
+          image: mysql:8.0
           ports:
             - containerPort: 3306
           env:
