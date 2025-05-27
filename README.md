@@ -17,5 +17,12 @@ kubectl apply -f deployment.yml
 kubectl get pods -n mysql
 
 kubectl get secrets -n mysql
+kubectl get pods -n mysql -w
+
+kubectl exec -it mysql-deployment-b64d994cf-ddw5b -n mysql -- bash
+> mysql -u root -p
+> MyAdmin123
+> show databases;
+
 
 
