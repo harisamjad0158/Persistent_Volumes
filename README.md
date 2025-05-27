@@ -1,10 +1,17 @@
 kubectl apply -f namespace.yml
+
 kubectl apply -f mysql-pv.yml
+
 kubectl apply -f mysql-pvc.yml
+
 kubectl apply -f secret.yml
+
 kubectl apply -f configMap.yml
+
 kubectl apply -f deployment.yml
+
 kubectl get pvc -n mysql
+
 kubectl get pv
 
  kubectl get pvc
